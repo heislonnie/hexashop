@@ -3,83 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hexashop</title>
+    <title>Hexashop - Online Shopping</title>
     <link rel="stylesheet" href="./hexa.css" />
   </head>
   <body>
     <div class="navbar">
-      <div class="logo">
-        <img src="./logo.png" alt="" />
+      <a href="#home" class="logo">
+        <img loading="lazy" src="./logo.png" alt="Hexashop Logo" />
         <div>
-          <!-- <h1>HEXASHOP</h1>
-          <h2>ONLINE SHOPPING</h2> -->
+          <h1>HEXASHOP</h1> 
+          <h2>ONLINE SHOPPING</h2> 
         </div>
-      </div>
+      </a>
       <div class="dash">
-        <p class="grey">Home</p>
-        <p>Men's</p>
-        <p>Women's</p>
-        <p>Kid's</p>
-        <p>Pages</p>
-        <p>Features</p>
-        <p>Explore</p>
+        <p class="nav-link" data-section="home">Home</p>
+        <p class="nav-link" data-section="mens">Men's</p>
+        <p class="nav-link" data-section="womens">Women's</p>
+        <p class="nav-link" data-section="kids">Kid's</p>
+        <p class="nav-link" data-section="explore">Explore</p>
+        <p class="nav-link" data-section="social">Features</p>
+        <p class="nav-link" data-section="newsletter">Contact</p>
       </div>
     </div>
 
-    <div class="hero">
+    <div class="hero" id="home">
       <div class="hero-left">
         <div>
           <h1>WE ARE HEXASHOP</h1>
-          <p>Awesome, clean & creative HTML5 <template></template></p>
-          <button class="btn-1">Purchase Now!</button>
+          <p>Awesome, clean & creative shopping experience</p>
+          <button class="btn-1" onclick="scrollToSection('mens')">Purchase Now!</button>
         </div>
       </div>
 
       <div class="hero-right">
-        <div class="women">
+        <div class="women" onclick="scrollToSection('womens')">
           <h1>WOMEN</h1>
-          <p>Best clothes for men</p>
-          <!-- <button>Discover More</button> -->
-        </div>
-
-        <div class="men">
-          <h1>MEN</h1>
           <p>Best clothes for women</p>
-          <!-- <button>Discover More</button> -->
+          <button>Discover More</button>
         </div>
 
-        <div class="kids">
+        <div class="men" onclick="scrollToSection('mens')">
+          <h1>MEN</h1>
+          <p>Best clothes for men</p>
+          <button>Discover More</button>
+        </div>
+
+        <div class="kids" onclick="scrollToSection('kids')">
           <h1>KIDS</h1>
           <p>Best clothes for kids</p>
-          <!-- <button>Discover More</button> -->
+          <button>Discover More</button>
         </div>
 
-        <div class="accessories">
+        <div class="accessories" onclick="scrollToSection('explore')">
           <h1>Accessories</h1>
           <p>Best trend accessories</p>
-          <!-- <button>Discover More</button> -->
+          <button>Discover More</button>
         </div>
       </div>
     </div>
 
-    <div class="mens-overview">
+    <div class="mens-overview" id="mens">
       <h1 class="mann">Men's latest</h1>
       <p>
         Details to details is what makes Hexashop different from the other
-        themes.
+        themes. Quality and style in every piece.
       </p>
     </div>
 
     <div class="men-img">
       <div class="mens-img">
-        <img src="./men-01.jpg" alt="" />
+        <img loading="lazy" src="./men-01.jpg" alt="Classic Spring" />
         <div class="mens-jpg">
           <div>
             <h1>Classic Spring</h1>
             <h2>
-              <img src="./start.png" alt="" /> <img src="./start.png" alt="" />
-              <img src="./start.png" alt="" /> <img src="./start.png" alt="" />
-              <img src="./start.png" alt="" />
+              <img loading="lazy" src="./start.png" alt="★" /> <img loading="lazy" src="./start.png" alt="★" />
+              <img loading="lazy" src="./start.png" alt="★" /> <img loading="lazy" src="./start.png" alt="★" />
+              <img loading="lazy" src="./start.png" alt="★" />
             </h2>
           </div>
           <p>$120</p>
@@ -87,14 +87,14 @@
       </div>
 
       <div class="mens-img">
-        <img src="./men-02.jpg" alt="" />
+        <img loading="lazy" src="./men-02.jpg" alt="Air Force 1 X" />
         <div class="mens-jpg">
           <div>
             <h1>Air Force 1 X</h1>
             <h2>
-              <img src="./start.png" alt="" /> <img src="./start.png" alt="" />
-              <img src="./start.png" alt="" /> <img src="./start.png" alt="" />
-              <img src="./start.png" alt="" />
+              <img src="./start.png" alt="★" /> <img src="./start.png" alt="★" />
+              <img src="./start.png" alt="★" /> <img src="./start.png" alt="★" />
+              <img src="./start.png" alt="★" />
             </h2>
           </div>
           <p>$90</p>
@@ -102,14 +102,14 @@
       </div>
 
       <div class="mens-img">
-        <img src="./men-03.jpg" alt="" />
+        <img loading="lazy" src="./men-03.jpg" alt="Love Nana '20" />
         <div class="mens-jpg">
           <div>
             <h1>Love Nana '20</h1>
             <h2>
-              <img src="./start.png" alt="" /> <img src="./start.png" alt="" />
-              <img src="./start.png" alt="" /> <img src="./start.png" alt="" />
-              <img src="./start.png" alt="" />
+              <img src="./start.png" alt="★" /> <img src="./start.png" alt="★" />
+              <img src="./start.png" alt="★" /> <img src="./start.png" alt="★" />
+              <img src="./start.png" alt="★" />
             </h2>
           </div>
           <p>$150</p>
@@ -117,24 +117,24 @@
       </div>
     </div>
 
-    <div class="womens-overview">
+    <div class="womens-overview" id="womens">
       <h1 class="mann">Women's latest</h1>
       <p>
         Details to details is what makes Hexashop different from the other
-        themes.
+        themes. Elegance and comfort combined.
       </p>
     </div>
 
     <div class="womens-img">
       <div class="mens-img">
-        <img src="./women-01.jpg" alt="" />
+        <img loading="lazy" src="./women-01.jpg" alt="New Green Jacket" />
         <div class="mens-jpg">
           <div>
             <h1>New Green Jacket</h1>
             <h2>
-              <img src="./start.png" alt="" /> <img src="./start.png" alt="" />
-              <img src="./start.png" alt="" /> <img src="./start.png" alt="" />
-              <img src="./start.png" alt="" />
+              <img src="./start.png" alt="★" /> <img src="./start.png" alt="★" />
+              <img src="./start.png" alt="★" /> <img src="./start.png" alt="★" />
+              <img src="./start.png" alt="★" />
             </h2>
           </div>
           <p>$75</p>
@@ -142,14 +142,14 @@
       </div>
 
       <div class="mens-img">
-        <img src="./women-02.jpg" alt="" />
+        <img loading="lazy" src="./women-02.jpg" alt="Classic Dress" />
         <div class="mens-jpg">
           <div>
             <h1>Classic Dress</h1>
             <h2>
-              <img src="./start.png" alt="" /> <img src="./start.png" alt="" />
-              <img src="./start.png" alt="" /> <img src="./start.png" alt="" />
-              <img src="./start.png" alt="" />
+              <img src="./start.png" alt="★" /> <img src="./start.png" alt="★" />
+              <img src="./start.png" alt="★" /> <img src="./start.png" alt="★" />
+              <img src="./start.png" alt="★" />
             </h2>
           </div>
           <p>$45</p>
@@ -157,14 +157,14 @@
       </div>
 
       <div class="mens-img">
-        <img src="./women-03.jpg" alt="" />
+        <img loading="lazy" src="./women-03.jpg" alt="Spring Collection" />
         <div class="mens-jpg">
           <div>
             <h1>Spring Collection</h1>
             <h2>
-              <img src="./start.png" alt="" /> <img src="./start.png" alt="" />
-              <img src="./start.png" alt="" /> <img src="./start.png" alt="" />
-              <img src="./start.png" alt="" />
+              <img src="./start.png" alt="★" /> <img src="./start.png" alt="★" />
+              <img src="./start.png" alt="★" /> <img src="./start.png" alt="★" />
+              <img src="./start.png" alt="★" />
             </h2>
           </div>
           <p>$130</p>
@@ -172,24 +172,24 @@
       </div>
     </div>
 
-    <div class="kids-overview">
+    <div class="kids-overview" id="kids">
       <h1 class="mann">Kid's latest</h1>
       <p>
         Details to details is what makes Hexashop different from the other
-        themes.
+        themes. Safe and stylish for your children.
       </p>
     </div>
 
     <div class="kids-img">
       <div class="mens-img">
-        <img src="./kid-01.jpg" alt="" />
+        <img loading="lazy" src="./kid-01.jpg" alt="School Collection" />
         <div class="mens-jpg">
           <div>
             <h1>School Collection</h1>
             <h2>
-              <img src="./start.png" alt="" /> <img src="./start.png" alt="" />
-              <img src="./start.png" alt="" /> <img src="./start.png" alt="" />
-              <img src="./start.png" alt="" />
+              <img src="./start.png" alt="★" /> <img src="./start.png" alt="★" />
+              <img src="./start.png" alt="★" /> <img src="./start.png" alt="★" />
+              <img src="./start.png" alt="★" />
             </h2>
           </div>
           <p>$80</p>
@@ -197,14 +197,14 @@
       </div>
 
       <div class="mens-img">
-        <img src="./kid-02.jpg" alt="" />
+        <img loading="lazy" src="./kid-02.jpg" alt="Summer Cap" />
         <div class="mens-jpg">
           <div>
             <h1>Summer Cap</h1>
             <h2>
-              <img src="./start.png" alt="" /> <img src="./start.png" alt="" />
-              <img src="./start.png" alt="" /> <img src="./start.png" alt="" />
-              <img src="./start.png" alt="" />
+              <img src="./start.png" alt="★" /> <img src="./start.png" alt="★" />
+              <img src="./start.png" alt="★" /> <img src="./start.png" alt="★" />
+              <img src="./start.png" alt="★" />
             </h2>
           </div>
           <p>$12</p>
@@ -212,14 +212,14 @@
       </div>
 
       <div class="mens-img">
-        <img src="./kid-03.jpg" alt="" />
+        <img loading="lazy" src="./kid-03.jpg" alt="Classic Kid" />
         <div class="mens-jpg">
           <div>
-            <h1>  Classic Kid</h1>
+            <h1>Classic Kid</h1>
             <h2>
-              <img src="./start.png" alt="" /> <img src="./start.png" alt="" />
-              <img src="./start.png" alt="" /> <img src="./start.png" alt="" />
-              <img src="./start.png" alt="" />
+              <img src="./start.png" alt="★" /> <img src="./start.png" alt="★" />
+              <img src="./start.png" alt="★" /> <img src="./start.png" alt="★" />
+              <img src="./start.png" alt="★" />
             </h2>
           </div>
           <p>$30</p>
@@ -227,7 +227,7 @@
       </div>
     </div>
 
-    <div class="explore">
+    <div class="explore" id="explore">
       <div class="explore-left">
         <h1>Explore Our Products</h1>
         <p>
@@ -236,7 +236,7 @@
           any kind of ecommerce CMS theme as you wish.
         </p>
         <p1>
-          <img src="./quote-left (2).png" alt="" />
+          <img loading="lazy" src="./quote-left (2).png" alt="" />
           <span>
             You are not allowed to redistribute this template ZIP file on any
             other website.
@@ -249,10 +249,10 @@
         </p>
         <p>
           If this template is beneficial for your website or business, please
-          kindly <span class="support-us">support us</span> a little via PayPal.
+          kindly <span class="support-us" onclick="alert('Thank you for your support!')">support us</span> a little via PayPal.
           Please also tell your friends about our great website. Thank you.
         </p>
-        <button class="explore-btn">Discover More</button>
+        <button class="explore-btn" onclick="scrollToSection('newsletter')">Discover More</button>
       </div>
 
       <div class="explore-right">
@@ -262,11 +262,11 @@
         </div>
 
         <div>
-          <img src="./explore-image-01.jpg" alt="" />
+          <img loading="lazy" src="./explore-image-01.jpg" alt="Leather Bags" />
         </div>
 
         <div>
-          <img src="explore-image-02.jpg" alt="" />
+          <img loading="lazy" src="./explore-image-02.jpg" alt="Different Styles" />
         </div>
 
         <div class="explore-h1">
@@ -276,34 +276,34 @@
       </div>
     </div>
 
-    <div class="social">
+    <div class="social" id="social">
       <h1>Social Media</h1>
       <p>
         Details to details is what makes Hexashop different from the other
-        themes.
+        themes. Follow us on social media.
       </p>
 
       <div class="social-img">
-        <img src="./instagram-01.jpg" alt="" />
-        <img src="./instagram-02.jpg" alt="" />
-        <img src="./instagram-03.jpg" alt="" />
-        <img src="./instagram-04.jpg" alt="" />
-        <img src="./instagram-05.jpg" alt="" />
-        <img src="./instagram-06.jpg" alt="" />
+        <img loading="lazy" src="./instagram-01.jpg" alt="Instagram 1" />
+        <img loading="lazy" src="./instagram-02.jpg" alt="Instagram 2" />
+        <img loading="lazy" src="./instagram-03.jpg" alt="Instagram 3" />
+        <img loading="lazy" src="./instagram-04.jpg" alt="Instagram 4" />
+        <img loading="lazy" src="./instagram-05.jpg" alt="Instagram 5" />
+        <img loading="lazy" src="./instagram-06.jpg" alt="Instagram 6" />
       </div>
     </div>
 
-    <div class="newsletter">
+    <div class="newsletter" id="newsletter">
       <div class="news-left">
         <h1>By Subscribing To Our Newsletter You Can Get 30% Off</h1>
         <p>
           Details to details is what makes Hexashop different from the other
-          themes.
+          themes. Get exclusive deals and updates.
         </p>
         <div class="input">
           <input type="text" placeholder="Your Name" />
-          <input type="text" placeholder="Your Email Address" />
-          <button><img src="./paper-plane (2).png" alt="" /></button>
+          <input type="email" placeholder="Your Email Address" />
+            <button onclick="subscribeNewsletter()"><img loading="lazy" src="./paper-plane (2).png" alt="Subscribe" /></button>
         </div>
       </div>
 
@@ -341,48 +341,94 @@
     </div>
 
     <div class="bottom">
-      <!-- <div class="bottom-div"> -->
-        <div>
-          <img src="./white-logo.png" alt="" />
-          <p>16501 Collins Ave, Suuny Isles Beach, Fl 33160, United States</p>
-          <p>hexashop@company.com</p>
-          <p>010-020-0340</p>
-        </div>
+      <div>
+        <img loading="lazy" src="./white-logo.png" alt="Hexashop" />
+        <p>16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</p>
+        <p>hexashop@company.com</p>
+        <p>010-020-0340</p>
+      </div>
 
-        <div>
-          <h1>Shopping and Categories</h1>
-          <p>Men's Shopping</p>
-          <p>Women's Shopping</p>
-          <p>Kid's Shopping</p>
-        </div>
+      <div>
+        <h1>Shopping and Categories</h1>
+        <p onclick="scrollToSection('mens')" style="cursor: pointer;">Men's Shopping</p>
+        <p onclick="scrollToSection('womens')" style="cursor: pointer;">Women's Shopping</p>
+        <p onclick="scrollToSection('kids')" style="cursor: pointer;">Kid's Shopping</p>
+      </div>
 
-        <div>
-          <h1>Useful Links</h1>
-          <p>Homepage</p>
-          <p>About Us</p>
-          <p>Contact Us</p>
-        </div>
+      <div>
+        <h1>Useful Links</h1>
+        <p onclick="scrollToSection('home')" style="cursor: pointer;">Homepage</p>
+        <p onclick="scrollToSection('explore')" style="cursor: pointer;">About Us</p>
+        <p onclick="scrollToSection('newsletter')" style="cursor: pointer;">Contact Us</p>
+      </div>
 
-        <div>
-          <h1>Help & Information</h1>
-          <p>Help</p>
-          <p>FAQ'S</p>
-          <p>Shipping</p>
-          <p>Tracking ID</p>
-        </div>
+      <div>
+        <h1>Help & Information</h1>
+        <p onclick="alert('Help section coming soon!')">Help</p>
+        <p onclick="alert('FAQ section coming soon!')">FAQ'S</p>
+        <p onclick="alert('Shipping information coming soon!')">Shipping</p>
+        <p onclick="alert('Tracking information coming soon!')">Tracking ID</p>
       </div>
     </div>
 
     <div class="last-line">
-      <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved.</p>
-      <p>Design: TemplateMo</p>
+      <p>Copyright © 2024 HexaShop Co., Ltd. All Rights Reserved.</p>
+      <p>Design: TemplateMo | Enhanced by Professional Developer</p>
 
       <div>
-        <img src="./facebook (2).png" alt="" />
-        <img src="./twitter (2).png" alt="" />
-        <img src="./behance.png" alt="" />
-        <img src="./linkedin.png" alt="" />
+        <img loading="lazy" src="./facebook (2).png" alt="Facebook" />
+        <img loading="lazy" src="./twitter (2).png" alt="Twitter" />
+        <img loading="lazy" src="./behance.png" alt="Behance" />
+        <img loading="lazy" src="./linkedin.png" alt="LinkedIn" />
       </div>
     </div>
+
+    <script>
+      // Smooth scroll to sections
+      function scrollToSection(sectionId) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+
+      // Subscribe to newsletter
+      function subscribeNewsletter() {
+        const inputs = document.querySelectorAll('.input input');
+        const name = inputs[0].value.trim();
+        const email = inputs[1].value.trim();
+
+        if (name && email) {
+          alert(`Thank you ${name}! You will receive special offers at ${email}`);
+          inputs[0].value = '';
+          inputs[1].value = '';
+        } else {
+          alert('Please fill in all fields!');
+        }
+      }
+
+      // Navigation link click handlers
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+          const sectionId = this.getAttribute('data-section');
+          scrollToSection(sectionId);
+        });
+      });
+
+      // Add hover effects to social images
+      document.querySelectorAll('.social img').forEach(img => {
+        img.addEventListener('click', function() {
+          alert('Follow us on Instagram @hexashop!');
+        });
+      });
+
+      // Product click tracking
+      document.querySelectorAll('.mens-img').forEach(product => {
+        product.addEventListener('click', function() {
+          const productName = this.querySelector('.mens-jpg h1').textContent;
+          alert(`Product: ${productName} - Added to cart!`);
+        });
+      });
+    </script>
   </body>
 </html>
